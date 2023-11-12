@@ -2,7 +2,7 @@ package Practica7;
 
 import java.util.Scanner
 import java.io.*;
-public class Controladora {
+public class Controladora extends WebMaker{
 	
 	public class void main (String [] args) {
 		WebMaker generador = new WebMaker();
@@ -11,11 +11,11 @@ public class Controladora {
 		escritor.println(generador.imprimirEncabezado());
 		
 		escritor.println(generador.imprimirTexto("Un dragon que me quiero tatuar :p"));
-		escritor.println(generador.insertarImagen(“dragons.jpg”));
+		escritor.println(generador.insertarImagen("dragons.jpg"));
 		escritor.println(generador.imprimirTexto("Mi cantante favorito"));
 		escritor.println(generador.insertarImagen("Hs.jpg"));
 		escritor.println(generador.imprimirTexto("el nombre de una canción"));
-		escritor.println(generador.insertarImagen("Sweet.jpg");	
+		escritor.println(generador.insertarImagen("Sweet.jpg"));	
 		
 		while(lector.hasNext())	{
 			escritor.println(lector.nextLine());

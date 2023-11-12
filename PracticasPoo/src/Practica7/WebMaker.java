@@ -1,6 +1,6 @@
 package Practica7;
 
-public class WebMaker {
+ppublic class WebMaker {
 
 /**
 * WebMaker.java
