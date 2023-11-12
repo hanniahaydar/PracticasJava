@@ -1,6 +1,10 @@
 package Practica7;
-
-ppublic class WebMaker {
+import java.io.ObjectOutputStream;
+import java.io.FileOutputStream;
+import java.io.FileInputStream;
+import java.io.Serializable;
+import java.io.IOException;
+import java.util.Scanner;
 
 /**
 * WebMaker.java
@@ -127,7 +131,7 @@ public class WebMaker implements Serializable {
 	/** 
 	* Agrega el contenido del formulario a la página web
 	*/
-	private String getForm() {
+	private String getForm()  {
 		StringBuilder aux = new StringBuilder();
 		
 		try {
@@ -163,5 +167,4 @@ public class WebMaker implements Serializable {
 			e.printStackTrace();
 		}
 	}
-}
 }

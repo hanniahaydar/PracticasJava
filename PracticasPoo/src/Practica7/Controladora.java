@@ -1,13 +1,18 @@
 package Practica7;
-
-import java.util.Scanner
+import java.util.Scanner;
 import java.io.*;
-public class Controladora extends WebMaker{
+public class Controladora{
 	
-	public class void main (String [] args) {
+	public static void main (String [] args){
 		WebMaker generador = new WebMaker();
-		PrintWriter	escritor = new	PrintWriter("index.txt");
-		Scanner	lector = new Scanner(new FileReader("form.txt"));
+		PrintWriter	escritor = new PrintWriter("index.txt");
+		Scanner lector;
+		try {
+			lector = new Scanner(new FileReader("form.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		escritor.println(generador.imprimirEncabezado());
 		
 		escritor.println(generador.imprimirTexto("Un dragon que me quiero tatuar :p"));
@@ -20,8 +25,9 @@ public class Controladora extends WebMaker{
 		while(lector.hasNext())	{
 			escritor.println(lector.nextLine());
 }
-escritor.println(generador.imprimirCierre());
-lector.close();
-escritor.close();
+           escritor.println(generador.imprimirCierre());
+           lector.close();
+           escritor.close();
+          
 	}
 }
