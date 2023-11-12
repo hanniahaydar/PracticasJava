@@ -16,6 +16,7 @@ public class Controladora{
 		//escritor.println(generador.imprimirTexto("el nombre de una canción"));
 		//escritor.println(generador.insertarImagen("Sweet.jpg"));	
 		
+		
 		//while(lector.hasNext())	{
 			//escritor.println(lector.nextLine());
 //}
