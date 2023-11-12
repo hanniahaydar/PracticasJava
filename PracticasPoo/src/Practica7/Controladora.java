@@ -25,19 +25,25 @@ public class Controladora{
          
 		
 		
-		DataOutputStream escritor	=	new	DataOutputStream
-				(new FileOutputStream("hola.bin"));
-	escritor.writeChar(33465);
-	escritor.writeShort('a');
-	escritor.writeDouble('z');
-	escritor.writeChar(10);
-	escritor.close();
-	DataInputStream	lector =	new	DataInputStream
-				(new FileInputStream("hola.bin"));
-	System.out.println(lector.readInt());
-	System.out.println(lector.readChar());
-	System.out.println(lector.readChar());
-	System.out.println(lector.readShort());
-	escritor.close();
+		//DataOutputStream escritor	=	new	DataOutputStream
+				//(new FileOutputStream("hola.bin"));
+	//escritor.writeChar(33465);
+	//escritor.writeShort('a');
+	//escritor.writeDouble('z');
+	//escritor.writeChar(10);
+	//escritor.close();
+	//DataInputStream	lector =	new	DataInputStream
+		//		(new FileInputStream("hola.bin"));
+	//System.out.println(lector.readInt());
+	//System.out.println(lector.readChar());
+	//System.out.println(lector.readChar());
+	//System.out.println(lector.readShort());
+	//escritor.close();
+		
+		
+		
+		
+		
+		
 	}
 }
