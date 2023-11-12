@@ -29,7 +29,7 @@ public class Controladora{
 				(new FileOutputStream("hola.bin"));
 	escritor.writeChar(33465);
 	escritor.writeShort('a');
-	escritor.writeInt('z');
+	escritor.writeDouble('z');
 	escritor.writeChar(10);
 	escritor.close();
 	DataInputStream	lector =	new	DataInputStream
