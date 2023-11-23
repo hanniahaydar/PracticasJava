@@ -3,7 +3,7 @@ package Practica7;
 import java.io.*;
 public class Controladora{
 	
-	// public static void main (String [] args) throws IOException, ClassNotFoundException{
+	public static void main (String [] args) throws IOException, ClassNotFoundException{
 			//  WebMaker generador = new WebMaker();
 			
 			 // try {
@@ -58,6 +58,7 @@ public class Controladora{
    
     lector.close();
     escritor.close();
+}
 }
 
 	
